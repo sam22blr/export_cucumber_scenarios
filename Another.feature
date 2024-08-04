@@ -1,7 +1,7 @@
 Feature: Another feature file
 
   @addPlace @regression
-  Scenario Outline: Verify adding a new place
+  Scenario Outline: Verify adding a new place <name>
     Given User builds an add place payload with "<name>", "<language>", "<address>"
     When User "post" http request to "addPlaceAPI"
     Then User gets a http success code as 200

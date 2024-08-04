@@ -29,8 +29,8 @@ public class ExportExcel {
 
     public static void main(String[] args) {
     	List<String> featureFilePaths = new ArrayList<>();
-        featureFilePaths.add("PlaceValidations.feature");
-        featureFilePaths.add("Another.feature");
+        //featureFilePaths.add("PlaceValidations.feature");
+        featureFilePaths.add("Another2.feature");
         
         String excelFilePath = "FeatureScenarios.xlsx";
 
