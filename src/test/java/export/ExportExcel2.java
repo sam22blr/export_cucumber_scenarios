@@ -58,6 +58,8 @@ public class ExportExcel2 {
                 GherkinParser.Builder builder = GherkinParser.builder();
                 GherkinParser parser = builder.build();
 
+                Stream<Envelope> envelopess = parser.parse(Paths.get(featureFilePath));
+
                 // Parse the feature file content
                 try (Stream<Envelope> envelopes = parser.parse(Paths.get(featureFilePath))) {
                     envelopes.forEach(envelope -> {
